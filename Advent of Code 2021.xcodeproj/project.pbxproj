@@ -27,6 +27,7 @@
 		DC7EF6CD2757B3F800AD17EB /* Day 01 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 01"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC7EF6CF2757B3F800AD17EB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DC7EF6D42757B46F00AD17EB /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		DC7EF6D62757B84100AD17EB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +44,7 @@
 		DC7EF6B62757B3D800AD17EB = {
 			isa = PBXGroup;
 			children = (
+				DC7EF6D62757B84100AD17EB /* README.md */,
 				DC7EF6CE2757B3F800AD17EB /* Day 01 */,
 				DC7EF6C02757B3D800AD17EB /* Products */,
 			);
