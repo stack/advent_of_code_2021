@@ -23,6 +23,8 @@
 		DC7EF70D2757BAA100AD17EB /* Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EF6DD2757B92000AD17EB /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DC7EF7192759081B00AD17EB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7EF7182759081B00AD17EB /* main.swift */; };
 		DC7EF71E2759084600AD17EB /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7EF71D2759084600AD17EB /* Data.swift */; };
+		DC7EF727275A5A0E00AD17EB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7EF726275A5A0E00AD17EB /* main.swift */; };
+		DC7EF72C275A5A3400AD17EB /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7EF72B275A5A3400AD17EB /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		DC7EF722275A5A0E00AD17EB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +106,9 @@
 		DC7EF7162759081B00AD17EB /* Day 02 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 02"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC7EF7182759081B00AD17EB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DC7EF71D2759084600AD17EB /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		DC7EF724275A5A0E00AD17EB /* Day 03 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 03"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC7EF726275A5A0E00AD17EB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		DC7EF72B275A5A3400AD17EB /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +149,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC7EF721275A5A0E00AD17EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -144,6 +165,7 @@
 				DC7EF6D62757B84100AD17EB /* README.md */,
 				DC7EF6CE2757B3F800AD17EB /* Day 01 */,
 				DC7EF7172759081B00AD17EB /* Day 02 */,
+				DC7EF725275A5A0E00AD17EB /* Day 03 */,
 				DC7EF6FD2757BA6200AD17EB /* RenderableWorkViewTestingApp */,
 				DC7EF6DE2757B92000AD17EB /* Utilities */,
 				DC7EF6E82757B92000AD17EB /* Utilities Tests */,
@@ -160,6 +182,7 @@
 				DC7EF6E42757B92000AD17EB /* UtilitiesTests.xctest */,
 				DC7EF6FC2757BA6200AD17EB /* RenderableWorkViewTestingApp.app */,
 				DC7EF7162759081B00AD17EB /* Day 02 */,
+				DC7EF724275A5A0E00AD17EB /* Day 03 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -226,6 +249,15 @@
 				DC7EF71D2759084600AD17EB /* Data.swift */,
 			);
 			path = "Day 02";
+			sourceTree = "<group>";
+		};
+		DC7EF725275A5A0E00AD17EB /* Day 03 */ = {
+			isa = PBXGroup;
+			children = (
+				DC7EF726275A5A0E00AD17EB /* main.swift */,
+				DC7EF72B275A5A3400AD17EB /* Data.swift */,
+			);
+			path = "Day 03";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +363,23 @@
 			productReference = DC7EF7162759081B00AD17EB /* Day 02 */;
 			productType = "com.apple.product-type.tool";
 		};
+		DC7EF723275A5A0E00AD17EB /* Day 03 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC7EF72A275A5A0E00AD17EB /* Build configuration list for PBXNativeTarget "Day 03" */;
+			buildPhases = (
+				DC7EF720275A5A0E00AD17EB /* Sources */,
+				DC7EF721275A5A0E00AD17EB /* Frameworks */,
+				DC7EF722275A5A0E00AD17EB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Day 03";
+			productName = "Day 03";
+			productReference = DC7EF724275A5A0E00AD17EB /* Day 03 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -358,6 +407,9 @@
 					DC7EF7152759081B00AD17EB = {
 						CreatedOnToolsVersion = 13.1;
 					};
+					DC7EF723275A5A0E00AD17EB = {
+						CreatedOnToolsVersion = 13.1;
+					};
 				};
 			};
 			buildConfigurationList = DC7EF6BA2757B3D800AD17EB /* Build configuration list for PBXProject "Advent of Code 2021" */;
@@ -375,6 +427,7 @@
 			targets = (
 				DC7EF6CC2757B3F800AD17EB /* Day 01 */,
 				DC7EF7152759081B00AD17EB /* Day 02 */,
+				DC7EF723275A5A0E00AD17EB /* Day 03 */,
 				DC7EF6FB2757BA6200AD17EB /* RenderableWorkViewTestingApp */,
 				DC7EF6DC2757B92000AD17EB /* Utilities */,
 				DC7EF6E32757B92000AD17EB /* UtilitiesTests */,
@@ -451,6 +504,15 @@
 			files = (
 				DC7EF7192759081B00AD17EB /* main.swift in Sources */,
 				DC7EF71E2759084600AD17EB /* Data.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC7EF720275A5A0E00AD17EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC7EF727275A5A0E00AD17EB /* main.swift in Sources */,
+				DC7EF72C275A5A3400AD17EB /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -790,6 +852,28 @@
 			};
 			name = Release;
 		};
+		DC7EF728275A5A0E00AD17EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GE3GZ86XX9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DC7EF729275A5A0E00AD17EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GE3GZ86XX9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -843,6 +927,15 @@
 			buildConfigurations = (
 				DC7EF71A2759081B00AD17EB /* Debug */,
 				DC7EF71B2759081B00AD17EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC7EF72A275A5A0E00AD17EB /* Build configuration list for PBXNativeTarget "Day 03" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC7EF728275A5A0E00AD17EB /* Debug */,
+				DC7EF729275A5A0E00AD17EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
