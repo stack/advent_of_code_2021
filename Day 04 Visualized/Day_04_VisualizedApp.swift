@@ -106,7 +106,7 @@ struct Day_04_VisualizedApp: App {
     
     var body: some Scene {
         WindowGroup {
-            RenderableWorkView(width: Int(renderWidth), height: Int(renderHeight), frameTime: 0.5) { animator in
+            RenderableWorkView(width: Int(renderWidth), height: Int(renderHeight), frameTime: 0.05) { animator in
                 var boards = self.boards
                 
                 let columns = boardColumns
