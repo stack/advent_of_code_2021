@@ -8,8 +8,9 @@
 
 import Algorithms
 import Foundation
+import Utilities
 
-let data = ExampleData
+let data = InputData
 
 struct Rule: CustomDebugStringConvertible, Hashable {
     let input: String
@@ -73,11 +74,11 @@ class Solver {
         for _ in 0 ..< steps {
             var nextTotals: [String:Int] = [:]
 
-            for key in currentTotals.keys {
+            for (key, value) in currentTotals {
                 let rule = rules[key]!
 
                 for pair in rule.output {
-                    nextTotals[pair] = (nextTotals[pair] ?? 0) + 1
+                    nextTotals[pair] = (nextTotals[pair] ?? 0) + value
                 }
             }
 
@@ -103,9 +104,9 @@ class Solver {
 
         return SolverResult(
             maxCharacter: String(maxCharacter),
-            maxCount: maxCount,
+            maxCount: Int(ceil(Double(maxCount) / 2.0)),
             minCharacter: String(minCharacter),
-            minCount: minCount
+            minCount: Int(ceil(Double(minCount) / 2.0))
         )
     }
 }
@@ -132,35 +133,30 @@ for line in lines {
 // MARK: - Part 1
 
 let solver1 = Solver(template: templateString, rules: rules)
-let result1 = solver1.run(steps: 10)
+
+let (time1, result1) = benchmark {
+    solver1.run(steps: 10)
+}
 
 print("Part 1")
 print("------")
 print("Max: \(result1.maxCharacter) = \(result1.maxCount)")
 print("Min: \(result1.minCharacter) = \(result1.minCount)")
 print("Result: \(result1.result)")
+print("Duration: \(time1)")
 
-exit(0)
+// MARK: - Part 2
 
+let solver2 = Solver(template: templateString, rules: rules)
 
-let templatePairs = templateString.adjacentPairs().map { "\($0.0)\($0.1)" }
-
-var currentTotals: [String:Int] = [:]
-
-for pair in templatePairs {
-    currentTotals[pair] = (currentTotals[pair] ?? 0) + 1
+let (time2, result2) = benchmark {
+    solver2.run(steps: 40)
 }
 
-for step in 0 ..< 10 {
-    var nextTotals: [String:Int] = [:]
-
-    for key in currentTotals.keys {
-        let rule = rules[key]!
-
-        for pair in rule.output {
-            nextTotals[pair] = (nextTotals[pair] ?? 0) + 1
-        }
-    }
-
-    currentTotals = nextTotals
-}
+print()
+print("Part 2")
+print("------")
+print("Max: \(result2.maxCharacter) = \(result2.maxCount)")
+print("Min: \(result2.minCharacter) = \(result2.minCount)")
+print("Result: \(result2.result)")
+print("Duration: \(time2)")
