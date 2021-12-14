@@ -55,8 +55,11 @@
 		DC7EF7552760E67700AD17EB /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7EF7542760E67700AD17EB /* Data.swift */; };
 		DC7EF75D27623F6200AD17EB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7EF75C27623F6200AD17EB /* main.swift */; };
 		DC7EF76227623F7F00AD17EB /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7EF76127623F7F00AD17EB /* Data.swift */; };
+		DC86C8402768D4D100359058 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC86C83F2768D4D100359058 /* main.swift */; };
+		DC86C8452768D4EA00359058 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC86C8442768D4EA00359058 /* Data.swift */; };
 		DCB9432B27639D6C00E06B95 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9432A27639D6C00E06B95 /* main.swift */; };
 		DCB9433027639D8900E06B95 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9432F27639D8900E06B95 /* Data.swift */; };
+		DCBE93E4276915F700BD0EAF /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = DCBE93E3276915F700BD0EAF /* Algorithms */; };
 		DCD82C1027677C9A00A988DA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD82C0F27677C9A00A988DA /* main.swift */; };
 		DCD82C1527677D5A00A988DA /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD82C1427677D5A00A988DA /* Data.swift */; };
 		DCD82C1E2767A75000A988DA /* Day_13_VisualizedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD82C1D2767A75000A988DA /* Day_13_VisualizedApp.swift */; };
@@ -255,6 +258,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		DC86C83B2768D4D100359058 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		DCB9432627639D6C00E06B95 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,6 +358,9 @@
 		DC7EF75A27623F6200AD17EB /* Day 09 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 09"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC7EF75C27623F6200AD17EB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DC7EF76127623F7F00AD17EB /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		DC86C83D2768D4D100359058 /* Day 14 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 14"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC86C83F2768D4D100359058 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		DC86C8442768D4EA00359058 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		DCB9432827639D6C00E06B95 /* Day 10 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 10"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB9432A27639D6C00E06B95 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DCB9432F27639D8900E06B95 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -477,6 +492,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC86C83A2768D4D100359058 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCBE93E4276915F700BD0EAF /* Algorithms in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCB9432527639D6C00E06B95 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -598,6 +621,7 @@
 				D1221A5E276622C8004225C5 /* Day 12 */,
 				DCD82C0E27677C9A00A988DA /* Day 13 */,
 				DCD82C1C2767A75000A988DA /* Day 13 Visualized */,
+				DC86C83E2768D4D100359058 /* Day 14 */,
 				DC7EF6FD2757BA6200AD17EB /* RenderableWorkViewTestingApp */,
 				DC7EF6DE2757B92000AD17EB /* Utilities */,
 				DC7EF6E82757B92000AD17EB /* Utilities Tests */,
@@ -628,6 +652,7 @@
 				D1221A5D276622C8004225C5 /* Day 12 */,
 				DCD82C0D27677C9A00A988DA /* Day 13 */,
 				DCD82C1B2767A75000A988DA /* Day 13 Visualized.app */,
+				DC86C83D2768D4D100359058 /* Day 14 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -739,6 +764,15 @@
 				DC7EF76127623F7F00AD17EB /* Data.swift */,
 			);
 			path = "Day 09";
+			sourceTree = "<group>";
+		};
+		DC86C83E2768D4D100359058 /* Day 14 */ = {
+			isa = PBXGroup;
+			children = (
+				DC86C83F2768D4D100359058 /* main.swift */,
+				DC86C8442768D4EA00359058 /* Data.swift */,
+			);
+			path = "Day 14";
 			sourceTree = "<group>";
 		};
 		DCB9432927639D6C00E06B95 /* Day 10 */ = {
@@ -1074,6 +1108,26 @@
 			productReference = DC7EF75A27623F6200AD17EB /* Day 09 */;
 			productType = "com.apple.product-type.tool";
 		};
+		DC86C83C2768D4D100359058 /* Day 14 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC86C8432768D4D100359058 /* Build configuration list for PBXNativeTarget "Day 14" */;
+			buildPhases = (
+				DC86C8392768D4D100359058 /* Sources */,
+				DC86C83A2768D4D100359058 /* Frameworks */,
+				DC86C83B2768D4D100359058 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Day 14";
+			packageProductDependencies = (
+				DCBE93E3276915F700BD0EAF /* Algorithms */,
+			);
+			productName = "Day 14";
+			productReference = DC86C83D2768D4D100359058 /* Day 14 */;
+			productType = "com.apple.product-type.tool";
+		};
 		DCB9432727639D6C00E06B95 /* Day 10 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCB9432E27639D6C00E06B95 /* Build configuration list for PBXNativeTarget "Day 10" */;
@@ -1134,8 +1188,8 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1310;
-				LastUpgradeCheck = 1310;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = "Stephen H. Gerstacker";
 				TargetAttributes = {
 					D12219FA275BC2E6004225C5 = {
@@ -1187,6 +1241,9 @@
 					DC7EF75927623F6200AD17EB = {
 						CreatedOnToolsVersion = 13.1;
 					};
+					DC86C83C2768D4D100359058 = {
+						CreatedOnToolsVersion = 13.2;
+					};
 					DCB9432727639D6C00E06B95 = {
 						CreatedOnToolsVersion = 13.1;
 					};
@@ -1207,6 +1264,9 @@
 				Base,
 			);
 			mainGroup = DC7EF6B62757B3D800AD17EB;
+			packageReferences = (
+				DCBE93E2276915F700BD0EAF /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = DC7EF6C02757B3D800AD17EB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1227,6 +1287,7 @@
 				D1221A5C276622C8004225C5 /* Day 12 */,
 				DCD82C0C27677C9A00A988DA /* Day 13 */,
 				DCD82C1A2767A75000A988DA /* Day 13 Visualized */,
+				DC86C83C2768D4D100359058 /* Day 14 */,
 				DC7EF6FB2757BA6200AD17EB /* RenderableWorkViewTestingApp */,
 				DC7EF6DC2757B92000AD17EB /* Utilities */,
 				DC7EF6E32757B92000AD17EB /* UtilitiesTests */,
@@ -1432,6 +1493,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC86C8392768D4D100359058 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC86C8402768D4D100359058 /* main.swift in Sources */,
+				DC86C8452768D4EA00359058 /* Data.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCB9432427639D6C00E06B95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1497,6 +1567,7 @@
 		D12219FF275BC2E6004225C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1508,6 +1579,7 @@
 		D1221A00275BC2E6004225C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1522,6 +1594,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Day 04 Visualized/Day_04_Visualized.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1549,6 +1622,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Day 04 Visualized/Day_04_Visualized.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1573,6 +1647,7 @@
 		D1221A2F275D1DC2004225C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1584,6 +1659,7 @@
 		D1221A30275D1DC2004225C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1595,6 +1671,7 @@
 		D1221A3C2764E018004225C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1606,6 +1683,7 @@
 		D1221A3D2764E018004225C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1620,6 +1698,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Day 11 Visualized/Day_11_Visualized.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1647,6 +1726,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Day 11 Visualized/Day_11_Visualized.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1671,6 +1751,7 @@
 		D1221A61276622C8004225C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1682,6 +1763,7 @@
 		D1221A62276622C8004225C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1808,6 +1890,7 @@
 		DC7EF6D22757B3F800AD17EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1819,6 +1902,7 @@
 		DC7EF6D32757B3F800AD17EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1940,6 +2024,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = RenderableWorkViewTestingApp/RenderableWorkViewTestingApp.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1967,6 +2052,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = RenderableWorkViewTestingApp/RenderableWorkViewTestingApp.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1991,6 +2077,7 @@
 		DC7EF71A2759081B00AD17EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2002,6 +2089,7 @@
 		DC7EF71B2759081B00AD17EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2013,6 +2101,7 @@
 		DC7EF728275A5A0E00AD17EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2024,6 +2113,7 @@
 		DC7EF729275A5A0E00AD17EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2035,6 +2125,7 @@
 		DC7EF737275E6EFF00AD17EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2046,6 +2137,7 @@
 		DC7EF738275E6EFF00AD17EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2057,6 +2149,7 @@
 		DC7EF744275F955300AD17EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2068,6 +2161,7 @@
 		DC7EF745275F955300AD17EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2079,6 +2173,7 @@
 		DC7EF7512760E65D00AD17EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2090,6 +2185,7 @@
 		DC7EF7522760E65D00AD17EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2101,6 +2197,7 @@
 		DC7EF75E27623F6300AD17EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2112,6 +2209,31 @@
 		DC7EF75F27623F6300AD17EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GE3GZ86XX9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DC86C8412768D4D100359058 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GE3GZ86XX9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DC86C8422768D4D100359058 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2123,6 +2245,7 @@
 		DCB9432C27639D6C00E06B95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2134,6 +2257,7 @@
 		DCB9432D27639D6C00E06B95 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2145,6 +2269,7 @@
 		DCD82C1127677C9A00A988DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2156,6 +2281,7 @@
 		DCD82C1227677C9A00A988DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2170,6 +2296,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Day 13 Visualized/Day_13_Visualized.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2197,6 +2324,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Day 13 Visualized/Day_13_Visualized.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2374,6 +2502,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		DC86C8432768D4D100359058 /* Build configuration list for PBXNativeTarget "Day 14" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC86C8412768D4D100359058 /* Debug */,
+				DC86C8422768D4D100359058 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DCB9432E27639D6C00E06B95 /* Build configuration list for PBXNativeTarget "Day 10" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2402,6 +2539,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DCBE93E2276915F700BD0EAF /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DCBE93E3276915F700BD0EAF /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCBE93E2276915F700BD0EAF /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DC7EF6B72757B3D800AD17EB /* Project object */;
 }
