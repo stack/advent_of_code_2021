@@ -176,6 +176,8 @@ struct RenderView: NSViewRepresentable {
             }
 
             if let nextPixelBuffer = pixelBuffer {
+                currentMetalTexture = nil
+                
                 CVMetalTextureCacheCreateTextureFromImage(kCFAllocatorDefault, metalTextureCache, nextPixelBuffer, nil, .bgra8Unorm, CVPixelBufferGetWidth(nextPixelBuffer), CVPixelBufferGetHeight(nextPixelBuffer), 0, &currentMetalTexture)
 
                 if let metalTexture = currentMetalTexture {
