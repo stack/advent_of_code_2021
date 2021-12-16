@@ -75,6 +75,11 @@
 		DCBE9409276A516700BD0EAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCBE9408276A516700BD0EAF /* Preview Assets.xcassets */; };
 		DCBE940E276A51CE00BD0EAF /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EF6DD2757B92000AD17EB /* Utilities.framework */; };
 		DCBE940F276A51CE00BD0EAF /* Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EF6DD2757B92000AD17EB /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DCBE941A276B73D000BD0EAF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBE9419276B73D000BD0EAF /* main.swift */; };
+		DCBE941F276B744A00BD0EAF /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBE941E276B744A00BD0EAF /* Data.swift */; };
+		DCBE9421276B76E500BD0EAF /* BitsDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBE9420276B76E500BD0EAF /* BitsDecoder.swift */; };
+		DCBE9422276B82D900BD0EAF /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EF6DD2757B92000AD17EB /* Utilities.framework */; };
+		DCBE9423276B82D900BD0EAF /* Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EF6DD2757B92000AD17EB /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DCD82C1027677C9A00A988DA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD82C0F27677C9A00A988DA /* main.swift */; };
 		DCD82C1527677D5A00A988DA /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD82C1427677D5A00A988DA /* Data.swift */; };
 		DCD82C1E2767A75000A988DA /* Day_13_VisualizedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD82C1D2767A75000A988DA /* Day_13_VisualizedApp.swift */; };
@@ -135,6 +140,13 @@
 			remoteInfo = Utilities;
 		};
 		DCBE9410276A51CE00BD0EAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC7EF6B72757B3D800AD17EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC7EF6DC2757B92000AD17EB;
+			remoteInfo = Utilities;
+		};
+		DCBE9424276B82D900BD0EAF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DC7EF6B72757B3D800AD17EB /* Project object */;
 			proxyType = 1;
@@ -354,6 +366,26 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCBE9415276B73D000BD0EAF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		DCBE9426276B82D900BD0EAF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DCBE9423276B82D900BD0EAF /* Utilities.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCD82C0B27677C9A00A988DA /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -454,6 +486,10 @@
 		DCBE9405276A516700BD0EAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCBE9408276A516700BD0EAF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DCBE940A276A516700BD0EAF /* Day_15_Visualized.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Day_15_Visualized.entitlements; sourceTree = "<group>"; };
+		DCBE9417276B73D000BD0EAF /* Day 16 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 16"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCBE9419276B73D000BD0EAF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		DCBE941E276B744A00BD0EAF /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		DCBE9420276B76E500BD0EAF /* BitsDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitsDecoder.swift; sourceTree = "<group>"; };
 		DCD82C0D27677C9A00A988DA /* Day 13 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 13"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD82C0F27677C9A00A988DA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DCD82C1427677D5A00A988DA /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -614,6 +650,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCBE9414276B73D000BD0EAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCBE9422276B82D900BD0EAF /* Utilities.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCD82C0A27677C9A00A988DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -731,6 +775,7 @@
 				DC86C83E2768D4D100359058 /* Day 14 */,
 				DCBE93EA276A1FF100BD0EAF /* Day 15 */,
 				DCBE9400276A516500BD0EAF /* Day 15 Visualized */,
+				DCBE9418276B73D000BD0EAF /* Day 16 */,
 				DC7EF6FD2757BA6200AD17EB /* RenderableWorkViewTestingApp */,
 				DC7EF6DE2757B92000AD17EB /* Utilities */,
 				DC7EF6E82757B92000AD17EB /* Utilities Tests */,
@@ -764,6 +809,7 @@
 				DC86C83D2768D4D100359058 /* Day 14 */,
 				DCBE93E9276A1FF100BD0EAF /* Day 15 */,
 				DCBE93FF276A516500BD0EAF /* Day 15 Visualized.app */,
+				DCBE9417276B73D000BD0EAF /* Day 16 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -925,6 +971,16 @@
 				DCBE9408276A516700BD0EAF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DCBE9418276B73D000BD0EAF /* Day 16 */ = {
+			isa = PBXGroup;
+			children = (
+				DCBE9419276B73D000BD0EAF /* main.swift */,
+				DCBE941E276B744A00BD0EAF /* Data.swift */,
+				DCBE9420276B76E500BD0EAF /* BitsDecoder.swift */,
+			);
+			path = "Day 16";
 			sourceTree = "<group>";
 		};
 		DCD82C0E27677C9A00A988DA /* Day 13 */ = {
@@ -1328,6 +1384,25 @@
 			productReference = DCBE93FF276A516500BD0EAF /* Day 15 Visualized.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DCBE9416276B73D000BD0EAF /* Day 16 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCBE941D276B73D000BD0EAF /* Build configuration list for PBXNativeTarget "Day 16" */;
+			buildPhases = (
+				DCBE9413276B73D000BD0EAF /* Sources */,
+				DCBE9414276B73D000BD0EAF /* Frameworks */,
+				DCBE9415276B73D000BD0EAF /* CopyFiles */,
+				DCBE9426276B82D900BD0EAF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCBE9425276B82D900BD0EAF /* PBXTargetDependency */,
+			);
+			name = "Day 16";
+			productName = "Day 16";
+			productReference = DCBE9417276B73D000BD0EAF /* Day 16 */;
+			productType = "com.apple.product-type.tool";
+		};
 		DCD82C0C27677C9A00A988DA /* Day 13 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCD82C1327677C9A00A988DA /* Build configuration list for PBXNativeTarget "Day 13" */;
@@ -1436,6 +1511,9 @@
 					DCBE93FE276A516500BD0EAF = {
 						CreatedOnToolsVersion = 13.2;
 					};
+					DCBE9416276B73D000BD0EAF = {
+						CreatedOnToolsVersion = 13.2;
+					};
 					DCD82C0C27677C9A00A988DA = {
 						CreatedOnToolsVersion = 13.1;
 					};
@@ -1479,6 +1557,7 @@
 				DC86C83C2768D4D100359058 /* Day 14 */,
 				DCBE93E8276A1FF100BD0EAF /* Day 15 */,
 				DCBE93FE276A516500BD0EAF /* Day 15 Visualized */,
+				DCBE9416276B73D000BD0EAF /* Day 16 */,
 				DC7EF6FB2757BA6200AD17EB /* RenderableWorkViewTestingApp */,
 				DC7EF6DC2757B92000AD17EB /* Utilities */,
 				DC7EF6E32757B92000AD17EB /* UtilitiesTests */,
@@ -1732,6 +1811,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCBE9413276B73D000BD0EAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCBE941A276B73D000BD0EAF /* main.swift in Sources */,
+				DCBE9421276B76E500BD0EAF /* BitsDecoder.swift in Sources */,
+				DCBE941F276B744A00BD0EAF /* Data.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCD82C0927677C9A00A988DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1792,6 +1881,11 @@
 			target = DC7EF6DC2757B92000AD17EB /* Utilities */;
 			targetProxy = DCBE9410276A51CE00BD0EAF /* PBXContainerItemProxy */;
 		};
+		DCBE9425276B82D900BD0EAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC7EF6DC2757B92000AD17EB /* Utilities */;
+			targetProxy = DCBE9424276B82D900BD0EAF /* PBXContainerItemProxy */;
+		};
 		DCD82C2D2767A7CF00A988DA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DC7EF6DC2757B92000AD17EB /* Utilities */;
@@ -1807,7 +1901,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day04;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-04";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1820,7 +1914,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day04;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-04";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1847,7 +1941,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day04Visualized;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-04-Visualized";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1875,7 +1969,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day04Visualized;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-04-Visualized";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1889,7 +1983,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day05;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-05";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1902,7 +1996,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day05;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-05";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1915,7 +2009,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day11;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-11";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1928,7 +2022,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day11;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-11";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1955,7 +2049,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day11Visualized;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-11-Visualized";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1983,7 +2077,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day11Visualized;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-11-Visualized";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1997,7 +2091,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day12;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-12";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -2010,7 +2104,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day12;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-12";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -2138,7 +2232,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day01;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-01";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -2151,7 +2245,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day01;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-01";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -2329,7 +2423,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day02;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-02";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -2342,7 +2436,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day02;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-02";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -2355,7 +2449,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day03;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-03";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -2368,7 +2462,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day03;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-03";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -2381,7 +2475,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day06;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-06";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -2394,7 +2488,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day06;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-06";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -2407,7 +2501,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day07;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-07";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -2420,7 +2514,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day07;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-07";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -2433,7 +2527,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day08;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-08";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -2446,7 +2540,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day08;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-08";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -2459,7 +2553,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day09;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-09";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -2472,7 +2566,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day09;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-09";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -2485,7 +2579,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day14;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-14";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -2498,7 +2592,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day14;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-14";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -2511,7 +2605,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day10;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-10";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -2524,7 +2618,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day10;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-10";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -2537,7 +2631,7 @@
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.1;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day15;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-15";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -2550,7 +2644,7 @@
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.1;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day15;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-15";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -2577,7 +2671,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day15Visualized;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-15-Visualized";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -2605,9 +2699,35 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day15Visualized;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-15-Visualized";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DCBE941B276B73D000BD0EAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GE3GZ86XX9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-16";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DCBE941C276B73D000BD0EAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GE3GZ86XX9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-16";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -2619,7 +2739,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day13;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-13";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -2632,7 +2752,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day13;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-13";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -2659,7 +2779,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day13Visualized;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-13-Visualized";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -2687,7 +2807,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = us.gerstacker.AdventOfCode.2021.Day13Visualized;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.AdventOfCode.2021.Day-13-Visualized";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -2882,6 +3002,15 @@
 			buildConfigurations = (
 				DCBE940B276A516700BD0EAF /* Debug */,
 				DCBE940C276A516700BD0EAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCBE941D276B73D000BD0EAF /* Build configuration list for PBXNativeTarget "Day 16" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCBE941B276B73D000BD0EAF /* Debug */,
+				DCBE941C276B73D000BD0EAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
