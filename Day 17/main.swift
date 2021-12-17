@@ -6,6 +6,7 @@
 //  Copyright © 2021 Stephen H. Gerstacker. All rights reserved.
 //
 
+import Algorithms
 import Foundation
 import Utilities
 
@@ -70,24 +71,34 @@ struct Projectile: CustomStringConvertible {
 
         let width = maxX - minX + 1
         let height = maxY - minY + 1
-
-        let result = (0 ..< height).map { y -> String in
-            (0 ..< width).map { x -> String in
+        
+        var screen = [[String]](repeating: [String](repeating: ".", count: width), count: height)
+        
+        for y in targetMax.y ... targetMin.y {
+            for x in targetMin.x ... targetMax.x {
                 let point = SIMD2<Int>(x: minX + x, y: maxY - y)
+                
+                screen[point.y][point.x] = "T"
+            }
+        }
+        
+        for visit in visited {
+            let point = SIMD2<Int>(x: minX + visit.x, y: maxY - visit.y)
+            
+            if visit == visited.first! {
+                screen[point.y][point.x] = "S"
+            } else {
+                screen[point.y][point.x] = "#"
+            }
+        }
 
-                if point == visited.first! {
-                    return "S"
-                } else if visited.contains(point) {
-                    return "#"
-                } else if isHit(point: point) {
-                    return "T"
-                } else {
-                    return "."
-                }
-            }.joined()
-        }.joined(separator: "\n")
+        let result = screen.map { $0.joined() }.joined(separator: "\n")
 
         return result
+    }
+    
+    var maxHeight: Int {
+        return visited.map { $0.y }.max()!
     }
 
     var state: ProjectileState {
@@ -113,11 +124,11 @@ struct Projectile: CustomStringConvertible {
             return false
         }
 
-        if isBetween(p0: point.x, p1: startPoint.x, p2: targetMin.x) && isBetween(p0: point.x, p1: startPoint.x, p2: targetMax.x) {
+        if isBetween(p0: point.x, p1: startPoint.x, p2: targetMin.x) || isBetween(p0: point.x, p1: startPoint.x, p2: targetMax.x) {
             return false
         }
 
-        if isBetween(p0: point.y, p1: startPoint.y, p2: targetMin.y) && isBetween(p0: point.y, p1: startPoint.y, p2: targetMax.y) {
+        if isBetween(p0: point.y, p1: startPoint.y, p2: targetMin.y) || isBetween(p0: point.y, p1: startPoint.y, p2: targetMax.y) {
             return false
         }
 
@@ -176,3 +187,159 @@ for testVelocity in testVelocities {
     print()
     print(projectile.state)
 }
+
+// MARK: - Part 1
+
+func isBetween(p0: Int, p1: Int, p2: Int) -> Bool {
+    let minP = min(p1, p2)
+    let maxP = max(p1, p2)
+    
+    let result = p0 >= minP && p0 <= maxP
+    return result
+}
+
+func isBeyond(point: Int, start: Int, targetMin: Int, targetMax: Int) -> Bool {
+    if !isBetween(p0: targetMin, p1: start, p2: point) && !isBetween(p0: targetMax, p1: start, p2: point) {
+        return false
+    }
+
+    if isBetween(p0: point, p1: start, p2: targetMin) || isBetween(p0: point, p1: start, p2: targetMax) {
+        return false
+    }
+    
+    return true
+}
+
+/*
+// Example Data
+let startY = 0
+let targetY1 = -5
+let targetY2 = -10
+
+let startX = 0
+let targetX1 = 20
+let targetX2 = 30
+ */
+
+// Input Data
+let startY = 0
+let targetY1 = -63
+let targetY2 = -109
+
+let startX = 0
+let targetX1 = 179
+let targetX2 = 201
+
+let absoluteLimitY = [abs(targetY1), abs(targetY2)].max()!
+
+var yHits: [(velocity: Int, time: Int)] = []
+
+for velocityY in (-absoluteLimitY ... absoluteLimitY) {
+    var currentPoint = startY
+    var currentVelocity = velocityY
+    var ticks = 0
+    
+    print("Y Velocity: \(velocityY)")
+    
+    while true {
+        if isBetween(p0: currentPoint, p1: targetY1, p2: targetY2) {
+            print("-   Hit: p: \(currentPoint), t: \(ticks)")
+            let value = (velocity: velocityY, time: ticks)
+            yHits.append(value)
+        }
+        
+        if isBeyond(point: currentPoint, start: startY, targetMin: targetY1, targetMax: targetY2) {
+            print("-   Beyond: p: \(currentPoint), t: \(ticks)")
+            break
+        }
+        
+        currentPoint += currentVelocity
+        currentVelocity -= 1
+        ticks += 1
+        
+        print("-   Step - p: \(currentPoint), v: \(currentVelocity), t: \(ticks)")
+    }
+}
+
+print("Y Hits: \(yHits)")
+
+let uniqueTimes = yHits.map { $0.time }.uniqued().sorted()
+
+print("Unique Times: \(uniqueTimes)")
+
+var xHits: [(time: Int, velocity: Int)] = []
+let maxX = max(targetX1, targetX2)
+
+for time in uniqueTimes {
+    for velocityX in 0 ... maxX {
+        var currentPoint = startX
+        var currentVelocity = velocityX
+        
+        for _ in 0 ..< time {
+            currentPoint += currentVelocity
+            
+            if currentVelocity > 0 {
+                currentVelocity -= 1
+            } else if currentVelocity < 0 {
+                currentVelocity += 1
+            }
+        }
+        
+        if isBetween(p0: currentPoint, p1: targetX1, p2: targetX2) {
+            let value = (time: time, velocity: velocityX)
+            xHits.append(value)
+        }
+    }
+}
+
+print("X Hits: \(xHits)")
+
+let start = SIMD2<Int>(x: startX, y: startY)
+let target1 = SIMD2<Int>(x: targetX1, y: targetY1)
+let target2 = SIMD2<Int>(x: targetX2, y: targetY2)
+
+var maxProjectile: Projectile? = nil
+
+var hitVelocities: [SIMD2<Int>] = []
+
+for yHit in yHits {
+    for xHit in xHits {
+        guard xHit.time == yHit.time else { continue }
+        
+        let velocity = SIMD2<Int>(x: xHit.velocity, y: yHit.velocity)
+        var projectile = Projectile(visited: [start], velocity: velocity, targetMin: target1, targetMax: target2)
+        
+        while projectile.state == .inFlight {
+            projectile.step()
+        }
+        
+        if projectile.state == .hit {
+            // print()
+            // print("Velocity: \(velocity.x), \(velocity.y)")
+            // print(projectile)
+            
+            hitVelocities.append(velocity)
+        
+            if let max = maxProjectile {
+                if projectile.maxHeight > max.maxHeight {
+                    maxProjectile = projectile
+                }
+            } else {
+                maxProjectile = projectile
+            }
+        }
+    }
+}
+
+if let maxProjectile = maxProjectile {
+    print()
+    print("Max Height: \(maxProjectile.maxHeight)")
+    print(maxProjectile)
+}
+
+for velocity in hitVelocities.map({ "\($0.x),\($0.y)" }).uniqued().sorted() {
+    print(velocity)
+}
+
+let uniqueHitVelocities = Array(hitVelocities.uniqued())
+print("Unique Velocities: \(uniqueHitVelocities.count)")

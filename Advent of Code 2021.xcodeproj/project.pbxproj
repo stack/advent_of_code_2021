@@ -33,6 +33,7 @@
 		D1B3B425276952A500724202 /* Timing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B3B424276952A500724202 /* Timing.swift */; };
 		D1B3B4262769531000724202 /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EF6DD2757B92000AD17EB /* Utilities.framework */; };
 		D1B3B4272769531000724202 /* Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EF6DD2757B92000AD17EB /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D1FC1FA9276D127700C8D029 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = D1FC1FA8276D127700C8D029 /* Algorithms */; };
 		DC7EF6D02757B3F800AD17EB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7EF6CF2757B3F800AD17EB /* main.swift */; };
 		DC7EF6D52757B46F00AD17EB /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7EF6D42757B46F00AD17EB /* Data.swift */; };
 		DC7EF6E52757B92000AD17EB /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EF6DD2757B92000AD17EB /* Utilities.framework */; };
@@ -696,6 +697,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1FC1FA9276D127700C8D029 /* Algorithms in Frameworks */,
 				DCBE9434276CC64600BD0EAF /* Utilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1471,6 +1473,9 @@
 				DCBE9437276CC64600BD0EAF /* PBXTargetDependency */,
 			);
 			name = "Day 17";
+			packageProductDependencies = (
+				D1FC1FA8276D127700C8D029 /* Algorithms */,
+			);
 			productName = "Day 17";
 			productReference = DCBE942B276CC58600BD0EAF /* Day 17 */;
 			productType = "com.apple.product-type.tool";
@@ -3170,6 +3175,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		D1FC1FA8276D127700C8D029 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCBE93E2276915F700BD0EAF /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
 		DCBE93E3276915F700BD0EAF /* Algorithms */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DCBE93E2276915F700BD0EAF /* XCRemoteSwiftPackageReference "swift-algorithms" */;
