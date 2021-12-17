@@ -44,7 +44,7 @@ public struct RenderableWorkView: View {
         panel.allowedContentTypes = [.mpeg4Movie]
         panel.directoryURL = desktopUrl
         panel.nameFieldStringValue = "Output"
-        panel.level = NSWindow.Level(rawValue: Int(CGWindowLevelForKey(.modalPanelWindow)))
+        // panel.level = NSWindow.Level(rawValue: Int(CGWindowLevelForKey(.modalPanelWindow)))
 
         panel.begin { response in
             guard response == .OK else {

@@ -23,7 +23,7 @@ public class Animator: ObservableObject {
     }
 
     var url: URL? = nil
-    var backPressure: Int = 16
+    var backPressure: Int = 32
 
     private var frameRate: CMTime = CMTime(seconds: 1.0, preferredTimescale: CMTimeScale(NSEC_PER_SEC))
 
@@ -124,11 +124,20 @@ public class Animator: ObservableObject {
         callback(context)
 
         CVPixelBufferUnlockBaseAddress(pixelBuffer, [])
-
+        
         DispatchQueue.main.async {
             self.latestPixelBuffer = pixelBuffer
         }
-
+        
+        submit(pixelBuffer: pixelBuffer)
+    }
+    
+    public func repeatLastFrame() {
+        guard let pixelBuffer = self.latestPixelBuffer else { return }
+        submit(pixelBuffer: pixelBuffer)
+    }
+    
+    private func submit(pixelBuffer: CVPixelBuffer) {
         writerSemaphore.wait()
 
         writerQueue.async {
