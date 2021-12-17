@@ -27,6 +27,10 @@ public struct Point: Hashable {
 
         return neighbors
     }
+
+    public static var zero: Point {
+        return Point(x: 0, y: 0)
+    }
 }
 
 extension Point: CustomDebugStringConvertible {
