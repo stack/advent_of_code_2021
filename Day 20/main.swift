@@ -8,13 +8,20 @@
 
 import Foundation
 
-let data = InputData
+let data = ExampleData
 
 struct Algorithm {
     let data: [Int]
+    let sillyMode: Bool
     
     init(stringValue: String) {
         data = stringValue.map { $0 == "#" ? 1 : 0 }
+        
+        if data.first! == 1 && data.last! == 0 {
+            sillyMode = true
+        } else {
+            sillyMode = false
+        }
     }
     
     func apply(to source: Image) -> Image {
@@ -22,7 +29,7 @@ struct Algorithm {
         
         for y in 0 ..< nextImage.height {
             for x in 0 ..< nextImage.width {
-                let index = source.pixelValue(x: x - 1, y: y - 1)
+                let index = source.pixelValue(x: x - 1, y: y - 1, isSilly: sillyMode)
                 let value = data[index]
                 
                 nextImage[x,y] = value
@@ -58,7 +65,7 @@ struct Image: CustomStringConvertible {
         }
     }
     
-    func pixelValue(x: Int, y: Int) -> Int {
+    func pixelValue(x: Int, y: Int, isSilly: Bool) -> Int {
         var result = 0
         
         for yOffset in (-1...1) { // y-offset
@@ -69,9 +76,9 @@ struct Image: CustomStringConvertible {
                 let value: Int
                 
                 if localX < 0 || localY < 0 {
-                    value = step
+                    value = isSilly ? step : 0
                 } else if localX >= width || localY >= width {
-                    value = step
+                    value = isSilly ? step : 0
                 } else {
                     value = data[localY][localX]
                 }
@@ -125,6 +132,7 @@ let step2 = algorithm.apply(to: step1)
 print()
 print(step2)
 
+print("Part 1:")
 print("Lit Pixels: \(step2.litPixels)")
 
 // MARK: - Part 2
@@ -136,4 +144,5 @@ for _ in 0 ..< 50 {
 }
 
 print()
+print("Part 2:")
 print("Lit Pixels: \(current.litPixels)")
