@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Utilities
 
 let data = InputData
 
@@ -169,9 +170,12 @@ func roll(with currentState: State) -> SIMD2<Int> {
 }
 
 let part2State = State(playerPosition: positions[0] - 1, otherPosition: positions[1] - 1, playerScore: 0, otherScore: 0)
-let part2Result = roll(with: part2State)
+let (part2Timing, part2Result) = benchmark {
+    roll(with: part2State)
+}
 
 print()
 print("Part 2:")
 print("Result: \(part2Result)")
 print("Max: \(part2Result.max())")
+print("Time: \(part2Timing)")
