@@ -33,6 +33,15 @@ public struct PriorityQueue<T> {
         let item = nodes.removeFirst()
         return item.0
     }
+    
+    public mutating func popWithCost() -> (item: Item, cost: Int)? {
+        if nodes.isEmpty {
+            return nil
+        }
+
+        let item = nodes.removeFirst()
+        return (item: item.0, cost: item.1)
+    }
 
     public mutating func push(_ item: Item, priority: Int) {
         var insertIdx = -1
